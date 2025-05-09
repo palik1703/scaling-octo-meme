@@ -1,0 +1,368 @@
+body {
+  background-color: #00100f;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.header__top {
+  background-color: #004643;
+  max-height: 40px;
+  min-height: 40px;
+}
+
+.header__top-wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-top: 11px;
+}
+
+.header__top-phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__top-phone-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header__top-social {
+  display: flex;
+  gap: 30px;
+  padding-left: 40px;
+}
+
+.header__bottom {
+  background-color: #000908;
+  max-height: 80px;
+}
+
+.header__bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 42px;
+}
+
+.header__menu-item {
+  list-style: none;
+}
+
+.header__menu-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.header__menu-link:hover {
+  opacity: 1;
+}
+
+.main__banner {
+  background-image: url("../assets/img/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 120px);
+}
+
+.main__banner-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__banner-content {
+  max-width: 600px;
+  margin-top: 61px;
+}
+
+.main__banner-title {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 120%;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.main__banner-title-span {
+  color: #33b0aa;
+}
+
+.main__baner-adventages {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.main__baner-adventage {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.main__baner-adventage-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.main__banner-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.main__banner-button {
+  padding: 16px 32px;
+  border-radius: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 120%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 24px 0 rgba(40, 176, 169, 0.2);
+}
+
+.main__banner-button--primary,
+.main__banner-button--secondary {
+  min-width: 240px;
+  min-height: 54px;
+  padding: 0 32px;
+  white-space: normal;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: none;
+  max-height: none;
+  opacity: 1;
+}
+
+.main__banner-button--primary {
+  background: linear-gradient(180deg, #32ddd4 0%, #1a746f 100%);
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 120%;
+  border-radius: 16px;
+  min-height: 54px;
+  min-width: 240px;
+  max-height: 54px;
+  max-width: 240px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 32px;
+  box-shadow: 0px 4px 24px 0px rgba(40, 176, 169, 0.2);
+  transition: all 0.3s ease;
+}
+
+.main__banner-button--secondary {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(181, 181, 181, 0.15) 100%
+  );
+  color: #ffffff;
+  border: none;
+  min-height: 54px;
+  min-width: 240px;
+}
+
+.main__banner-button-text {
+  opacity: 1;
+  color: #fff;
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.adventage__cards {
+  margin-top: 82px;
+}
+
+.adventage__card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  max-width: 162px;
+  max-height: 129px;
+  min-width: 162px;
+  min-height: 129px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.adventage__card-title {
+  margin-bottom: 6px;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.adventage__card-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  opacity: 0.8;
+  text-align: center;
+}
+
+/* === Promotions Block (Акции) === */
+.promotions {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.promotions__title {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.promotions__tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.promotions__tab {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 32px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.promotions__tab.active,
+.promotions__tab:focus {
+  background: #232927;
+  color: #fff;
+}
+.promotions__slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.promotions__arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+  z-index: 2;
+}
+.promotions__arrow--left {
+  margin-right: 16px;
+}
+.promotions__arrow--right {
+  margin-left: 16px;
+}
+.promotions__arrow:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+.promotions__arrow--left:before {
+  transform: rotate(-135deg);
+}
+.promotions__arrow--right:before {
+  transform: rotate(45deg);
+}
+.promotions__slider {
+  display: flex;
+  gap: 32px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+}
+.promotions__slide {
+  min-width: 300px;
+  max-width: 300px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #232927;
+  box-shadow: 0 4px 24px 0 rgba(40, 176, 169, 0.1);
+  opacity: 0.5;
+  transition: opacity 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.promotions__slide.active {
+  opacity: 1;
+  transform: scale(1.04);
+  z-index: 1;
+}
+.promotions__slide-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.promotions__pagination {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 32px;
+}
+.promotions__dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.promotions__dot.active {
+  background: #fff;
+}
